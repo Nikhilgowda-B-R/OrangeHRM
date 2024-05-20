@@ -7,11 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import orange.hRM.abstractComponents.AbstractComponent;
 
-public class LandingPage extends AbstractComponent {
+public class LoginPage extends AbstractComponent {
 
 	public WebDriver driver;
 
-	public LandingPage(WebDriver driver) {
+	public LoginPage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
