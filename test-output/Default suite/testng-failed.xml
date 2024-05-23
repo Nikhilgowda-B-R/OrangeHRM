@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="orange.hRM.tests.Authorization">
+      <class name="orange.hRM.tests.EmployeeManagement">
         <methods>
-          <include name="tearDown"/>
-          <include name="invalidUsername"/>
-          <include name="validLogin"/>
           <include name="launchApplication"/>
+          <include name="createEmployee" invocation-numbers="0"/>
         </methods>
-      </class> <!-- orange.hRM.tests.Authorization -->
+      </class> <!-- orange.hRM.tests.EmployeeManagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

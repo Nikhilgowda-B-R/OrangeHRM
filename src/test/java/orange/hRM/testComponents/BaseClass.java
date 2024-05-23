@@ -12,12 +12,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import orange.hRM.pageObjects.EmployeeManagementPage;
 import orange.hRM.pageObjects.LoginPage;
 
 public class BaseClass {
 
 	public WebDriver driver;
 	public LoginPage loginPage;
+	public EmployeeManagementPage employeeManagementPage;
+
 
 	public void initializerDriver() {
 
@@ -45,8 +48,8 @@ public class BaseClass {
 		return loginPage;
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void tearDown() {
-		driver.close();
-	}
+//	@AfterMethod(alwaysRun = true)
+//	public void tearDown() {
+//		driver.close();
+//	}
 }

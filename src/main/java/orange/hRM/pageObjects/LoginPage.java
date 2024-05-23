@@ -18,16 +18,16 @@ public class LoginPage extends AbstractComponent {
 	}
 
 	@FindBy(id = "txtUsername")
-	WebElement userNameInput;
+	private WebElement userNameInput;
 
 	@FindBy(id = "txtPassword")
-	WebElement passwordInput;
+	private WebElement passwordInput;
 
 	@FindBy(xpath = "//button[text()='Login']")
-	WebElement loginBtn;
+	private WebElement loginBtn;
 	
 	@FindBy(xpath = "//div[@class='toast toast-error']")
-	WebElement toastErrorMessage;
+	private WebElement toastErrorMessage;
 	
 
 	public void goTo() {
@@ -35,10 +35,11 @@ public class LoginPage extends AbstractComponent {
 
 	}
 
-	public void login(String userName, String password) {
+	public EmployeeManagementPage login(String userName, String password) {
 		userNameInput.sendKeys(userName);
 		passwordInput.sendKeys(password);
 		loginBtn.click();
+		return new EmployeeManagementPage(driver);
 	}
 
 	public String getErrorMessage() {
