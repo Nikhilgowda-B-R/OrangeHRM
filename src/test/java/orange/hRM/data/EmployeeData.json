@@ -1,0 +1,14 @@
+[
+	{
+		"LoginCred": {
+			"Name": "Admin",
+			"Password": "Fz@zNGVj51"
+		},
+		"EmployeeDetails": {
+			"firstName": "Nikhil",
+			"middleName": "gowda",
+			"lastName": "B R",
+			"location": "India Office"
+		}
+	}
+]

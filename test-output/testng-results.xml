@@ -2,20 +2,25 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-23T23:51:29 IST" name="Default suite" finished-at="2024-05-23T23:52:07 IST" duration-ms="38166">
+  <suite started-at="2024-05-25T00:58:32 IST" name="Default suite" finished-at="2024-05-25T00:59:14 IST" duration-ms="42039">
     <groups>
     </groups>
-    <test started-at="2024-05-23T23:51:29 IST" name="Default test" finished-at="2024-05-23T23:52:07 IST" duration-ms="38166">
+    <test started-at="2024-05-25T00:58:32 IST" name="Default test" finished-at="2024-05-25T00:59:14 IST" duration-ms="42039">
       <class name="orange.hRM.tests.EmployeeManagement">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:orange.hRM.tests.EmployeeManagement@55141def]" started-at="2024-05-23T23:51:30 IST" name="launchApplication" finished-at="2024-05-23T23:51:40 IST" duration-ms="10747" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:orange.hRM.tests.EmployeeManagement@55141def]" started-at="2024-05-25T00:58:32 IST" name="launchApplication" finished-at="2024-05-25T00:58:43 IST" duration-ms="10419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="createEmployee(java.util.HashMap)[pri:0, instance:orange.hRM.tests.EmployeeManagement@55141def]" started-at="2024-05-23T23:51:40 IST" name="createEmployee" data-provider="getValidLoginData" finished-at="2024-05-23T23:52:07 IST" duration-ms="26938" status="PASS">
+        <test-method signature="createEmployee(java.util.HashMap,java.util.HashMap)[pri:0, instance:orange.hRM.tests.EmployeeManagement@55141def]" started-at="2024-05-25T00:58:43 IST" name="createEmployee" data-provider="getEmployeeDetails" finished-at="2024-05-25T00:59:14 IST" duration-ms="31053" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[{Name=Admin, Password=Fz@zNGVj51}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[{firstName=Nikhil, lastName=B R, middleName=gowda, location=India Office}]]>
               </value>
             </param>
           </params>

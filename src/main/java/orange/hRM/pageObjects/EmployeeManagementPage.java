@@ -42,6 +42,14 @@ public class EmployeeManagementPage extends AbstractComponent {
 	
 	@FindBy(id = "modal-save-button")
 	private WebElement addEmpNextBtn;
+	
+	
+	@FindBy(id = "autoGenerateEmployeeId")
+	private  WebElement autoGenerateEmpIdToggle;
+
+	@FindBy(id = "joinedDate")
+	private WebElement joinedDatePicker;
+	
 
 	public void openEmployeeList() {
 		employeeListMenu.click();
@@ -70,8 +78,18 @@ public class EmployeeManagementPage extends AbstractComponent {
 		}
 	}
 	
-	public void movetoNextPageFromAddEmpoyeePage() {
+	public PersonalDetailsPage movetoNextPageFromAddEmpoyeePage() {
 		addEmpNextBtn.click();
+		return new PersonalDetailsPage(driver);
 	}
-
+	
+	public boolean checkAutoGenerateEmpIdToggle() {
+		return autoGenerateEmpIdToggle.isSelected();
+	}
+	
+	public String verifyJoinedDateDefaultSelection() {
+		String selectedDate = joinedDatePicker.getText();
+		return selectedDate;
+	}
+	
 }
