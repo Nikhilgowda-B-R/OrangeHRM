@@ -9,6 +9,16 @@
 			"middleName": "gowda",
 			"lastName": "B R",
 			"location": "India Office"
+		},
+		"PersonalDetails": {
+			"otherId": "AADHAAR",
+			"idNo": "7896545852",
+			"empBirthday": "1998-12-17",
+			"maritalStatus": "Single",
+			"gender": "Male",
+			"nationality": "Indian",
+			"drivingLicenseNo": "ED794365",
+			"drivingLicenseExpiryDate": "2025-12-15"
 		}
 	}
 ]

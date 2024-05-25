@@ -8,6 +8,7 @@
 	<test thread-count="5" name="Autentication Test">
 		<classes>
 			<class name="orange.hRM.tests.Authorization" />
+			<class name="orange.hRM.tests.EmployeeManagement" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
